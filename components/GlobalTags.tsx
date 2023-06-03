@@ -29,12 +29,15 @@ function GlobalTags() {
       <link rel="manifest" href={asset("/site.webmanifest")} />
 
       <style
-        dangerouslySetInnerHTML={{__html: `
+        dangerouslySetInnerHTML={{
+          __html: `
         .ql-editor{
           padding: 0px !important;
         }
         
-        `}} />
+        `,
+        }}
+      />
     </Head>
   );
 }

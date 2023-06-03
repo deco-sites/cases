@@ -56,4 +56,23 @@
     background-image: url(/whats.jpg);
     background-size: contain;
   }
+
+  .scrollbar-none {
+    scrollbar-width: "none";
+    -ms-overflow-style: "none",
+  }
+
+  .scrollbar-none::-webkit-scrollbar {
+      display: "none";
+  }
+
+  .triangle-to-the-left {
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+    border-right: 10px solid #202c33; 
+    margin-right: -10px;
+    margin-bottom: 8px;
+  }
 }
