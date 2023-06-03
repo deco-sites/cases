@@ -70,6 +70,7 @@
               "$live/sections/PageInclude.tsx",
               "$live/sections/Slot.tsx",
               "$live/sections/UseSlot.tsx",
+              "deco-sites/cases/sections/Chat.tsx",
               "deco-sites/cases/sections/DesignSystem.tsx",
               "deco-sites/cases/sections/GetStarted.tsx",
               "deco-sites/cases/sections/Head.tsx",
@@ -6893,6 +6894,68 @@
       ],
       "title": "deco-cx/live/sections/UseSlot.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML": {
+      "type": "string",
+      "format": "html",
+      "title": "HTML"
+    },
+    "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image": {
+      "type": "string",
+      "format": "image-uri",
+      "title": "Image"
+    },
+    "ZGVjby1zaXRlcy9jYXNlcy9zZWN0aW9ucy9DaGF0LnRzeA==@Message": {
+      "type": "object",
+      "properties": {
+        "from": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "tavano"
+            },
+            {
+              "type": "string",
+              "const": "jonatas"
+            }
+          ],
+          "type": "string",
+          "title": "From"
+        },
+        "message": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Message"
+        },
+        "image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Image"
+        }
+      },
+      "required": [
+        "from",
+        "message"
+      ],
+      "title": "Message"
+    },
+    "ZGVjby1zaXRlcy9jYXNlcy9zZWN0aW9ucy9DaGF0LnRzeA==@Message[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXNlcy9zZWN0aW9ucy9DaGF0LnRzeA==@Message"
+      },
+      "title": "Message[]"
+    },
+    "ZGVjby1zaXRlcy9jYXNlcy9zZWN0aW9ucy9DaGF0LnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "messages": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXNlcy9zZWN0aW9ucy9DaGF0LnRzeA==@Message[]",
+          "title": "Messages"
+        }
+      },
+      "required": [
+        "messages"
+      ],
+      "title": "deco-sites/cases/sections/Chat.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9jYXNlcy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@Colors": {
       "type": "object",
       "properties": {
@@ -9446,6 +9509,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9jYXNlcy9zZWN0aW9ucy9DaGF0LnRzeA==": {
+      "title": "deco-sites/cases/sections/Chat.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXNlcy9zZWN0aW9ucy9DaGF0LnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/cases/sections/Chat.tsx"
+          ],
+          "default": "deco-sites/cases/sections/Chat.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9jYXNlcy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4": {
       "title": "deco-sites/cases/sections/DesignSystem.tsx",
       "type": "object",
@@ -10598,6 +10682,9 @@
         },
         {
           "$ref": "#/definitions/JGxpdmUvc2VjdGlvbnMvVXNlU2xvdC50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXNlcy9zZWN0aW9ucy9DaGF0LnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXNlcy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4"

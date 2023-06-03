@@ -27,6 +27,14 @@ function GlobalTags() {
 
       {/* Web Manifest */}
       <link rel="manifest" href={asset("/site.webmanifest")} />
+
+      <style
+        dangerouslySetInnerHTML={{__html: `
+        .ql-editor{
+          padding: 0px !important;
+        }
+        
+        `}} />
     </Head>
   );
 }

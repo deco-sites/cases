@@ -9,6 +9,15 @@
     font-family: var(--font-family);
   }
 
+  body{
+    background: white;
+    min-height: 100vh;
+  }
+
+  .ql-editor{
+    padding: 0px !important;
+  }
+
   /** Remove default styles from input[type=number] */
   input[type=number]::-webkit-inner-spin-button,
   input[type=number]::-webkit-outer-spin-button {
@@ -41,5 +50,10 @@
 
   .scrollbar-none::-webkit-scrollbar {
     display: none;
+  }
+
+  .whatsapp{
+    background-image: url(/whats.jpg);
+    background-size: contain;
   }
 }
