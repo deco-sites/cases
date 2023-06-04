@@ -75,4 +75,14 @@
     margin-right: -10px;
     margin-bottom: 8px;
   }
+
+  .summary-whats::marker{
+    display: none;
+    content: '';
+  }
+
+  .summary-whats::-webkit-details-marker{
+    display: none;
+    content: '';
+  }
 }
