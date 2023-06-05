@@ -34,7 +34,6 @@ export default function Chat({ messages }: Props) {
             </p>
           </div>
           <div class="w-[30px]">
-
           </div>
           <details class="absolute right-[30px]">
             <summary class="summary-whats cursor-pointer">
